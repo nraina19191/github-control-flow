@@ -77,7 +77,7 @@ jobs:
       - name: Output contents
         run: ls
       - name: Get Reusable Flow
-        uses: nraina19191/github-control-flow/.github/workflows/reusable-flow.yml
+        uses: ./.github/workflows/reusable-flow.yml
         with:
           artifact-name: 'dist-files'
       - name: Deploy
