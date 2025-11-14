@@ -76,5 +76,9 @@ jobs:
           name: dist-files
       - name: Output contents
         run: ls
+      - name: Get Reusable Flow
+        uses: ~/.github/workflows/reusable-flow.yml
+        with:
+          artifact-name: 'dist-files'
       - name: Deploy
         run: echo "Deploying..."
